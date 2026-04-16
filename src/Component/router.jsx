@@ -5,6 +5,7 @@ import HomePage from './HomePage';
 import Timeline from './Timeline';
 import Stats from './Stats';
 import details from './details';
+import ErrorPage from './ErrorPage';
 
 const router = createBrowserRouter([
     {
@@ -22,7 +23,9 @@ const router = createBrowserRouter([
                 path: 'details/:id',
                 Component: details
             }
-        ]
+
+        ],
+        errorElement: <ErrorPage />
 
     }
 ])
