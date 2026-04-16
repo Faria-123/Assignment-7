@@ -30,7 +30,7 @@ const ContextProvider = ({ children }) => {
         }
         else {
             toast.success(`Video with ${profile.name}`);
-            setcall([...video, profile]);
+            setvideo([...video, profile]);
         }
     }
 
@@ -42,7 +42,7 @@ const ContextProvider = ({ children }) => {
         }
         else {
             toast.success(`Text with ${profile.name}`);
-            setcall([...text, profile]);
+            settext([...text, profile]);
         }
     }
 

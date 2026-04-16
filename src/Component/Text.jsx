@@ -1,8 +1,10 @@
 import React from 'react';
-import { FaHandshake } from "react-icons/fa";
 
-const Time = ({ c }) => {
-    // console.log(c);
+import { LuMessageCircleMore } from "react-icons/lu";
+
+
+const Text = ({ t }) => {
+    // console.log(t);
     return (
         <div>
             <div className="border-2 border-dashed border-blue-400 p-4 rounded-lg ">
@@ -11,19 +13,20 @@ const Time = ({ c }) => {
 
                     {/* Icon */}
                     <div className="text-yellow-500 text-xl">
-                        <FaHandshake />
+                        <LuMessageCircleMore />
+
                     </div>
 
                     {/* Text */}
                     <div>
                         <h2 className="text-sm font-medium text-gray-800">
-                            Meetup with{" "}
+                            Text with{" "}
                             <span className="text-blue-600 font-semibold">
-                                {c.name}
+                                {t.name}
                             </span>
                         </h2>
                         <p className="text-xs text-gray-500 mt-1">
-                            {c.next_due_date}
+                            {t.next_due_date}
                         </p>
                     </div>
 
@@ -34,4 +37,4 @@ const Time = ({ c }) => {
     );
 };
 
-export default Time; 
+export default Text; 
