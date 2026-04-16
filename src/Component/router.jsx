@@ -4,6 +4,7 @@ import Layout from './Layout';
 import HomePage from './HomePage';
 import Timeline from './Timeline';
 import Stats from './Stats';
+import details from './details';
 
 const router = createBrowserRouter([
     {
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
             },
             {
                 path: 'stats', Component: Stats
+            },
+            {
+                path: 'details/:id',
+                Component: details
             }
         ]
 

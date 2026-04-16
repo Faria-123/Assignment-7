@@ -1,10 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 const Card = ({ k }) => {
     const { id, name, picture, days_since_contact, tags, status } = k;
-    console.log(id, name, picture, days_since_contact, tags, status);
+    // console.log(id, name, picture, days_since_contact, tags, status);
     return (
-        <div>
+        <Link to={`details/${id}`}>
             {/* start */}
             <div className="max-w-xs bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center border border-gray-100">
 
@@ -46,7 +47,7 @@ const Card = ({ k }) => {
                 </div>
             </div>
 
-        </div>
+        </Link>
     );
 };
 
