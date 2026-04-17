@@ -23,7 +23,7 @@ const details = () => {
             <div className="container mx-auto min-h-screen p-4 md:p-12">
                 <div className="container mx-auto flex flex-col lg:flex-row gap-8">
 
-                    {/* LEFT SIDEBAR: Profile & Actions */}
+                    {/* LEFT SIDEBAR */}
                     <div className="lg:w-1/3 flex flex-col gap-4">
                         {/* Profile Card */}
                         <div className="bg-white rounded-2xl shadow-sm p-8 flex flex-col items-center text-center border border-gray-100">
@@ -45,7 +45,7 @@ const details = () => {
                             <p className="text-gray-400 text-xs mt-2">Preferred: {profile.email}</p>
                         </div>
 
-                        {/* Action Buttons */}
+                        {/* Action  */}
                         <div className="flex flex-col gap-2">
                             <button className="flex items-center justify-center gap-2 bg-white hover:bg-gray-50 p-3 rounded-xl border border-gray-200 text-gray-700 font-medium transition-all shadow-sm">
                                 <IoNotificationsOutline /> Snooze 2 Weeks
@@ -59,7 +59,7 @@ const details = () => {
                         </div>
                     </div>
 
-                    {/* RIGHT CONTENT: Stats & Quick Check-in */}
+                    {/* RIGHT CONTENT */}
                     <div className="lg:w-2/3 flex flex-col gap-6">
                         {/* Top Stats Row */}
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -77,7 +77,7 @@ const details = () => {
                             </div>
                         </div>
 
-                        {/* Relationship Goal Card */}
+                        {/* Relationship */}
                         <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex justify-between items-center">
                             <div>
                                 <h3 className="font-bold text-[#1A2B47] text-lg">Relationship Goal</h3>
@@ -88,7 +88,7 @@ const details = () => {
                             </button>
                         </div>
 
-                        {/* Quick Check-In Section */}
+                        {/* Quick  */}
                         <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
                             <h3 className="font-bold text-[#1A2B47] text-lg mb-6">Quick Check-In</h3>
                             <div className="grid grid-cols-3 gap-4">

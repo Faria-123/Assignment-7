@@ -63,9 +63,7 @@ const HomePage = () => {
             </div>
             {/* here */}
             <div className='container mx-auto grid md:grid-cols-3 lg:grid-cols-4 gap-5'>
-                {/* {
-                    keen.map(k => <Card k={k} />)
-                } */}
+
 
                 <Suspense fallback={<p className="text-center">Loading cards...</p>}>
                     {

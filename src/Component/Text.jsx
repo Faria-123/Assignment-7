@@ -11,13 +11,13 @@ const Text = ({ t }) => {
 
                 <div className="flex items-center gap-3">
 
-                    {/* Icon */}
+
                     <div className="text-yellow-500 text-xl">
                         <LuMessageCircleMore />
 
                     </div>
 
-                    {/* Text */}
+
                     <div>
                         <h2 className="text-sm font-medium text-gray-800">
                             Text with{" "}

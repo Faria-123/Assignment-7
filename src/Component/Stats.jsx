@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { Legend, Pie, PieChart, ResponsiveContainer, Tooltip } from 'recharts';
-// import { RechartsDevtools } from 'recharts/devtools';
+
 import { keencontext } from './ContextProvider';
 const Stats = () => {
     const keeninfo = useContext(keencontext);
@@ -13,9 +13,9 @@ const Stats = () => {
         // { name: 'Group D', value: 200, fill: '#FF8042' },
     ];
     return (
-        <div className='bg-[#F8FAFC]'>
+        <div className='bg-[#F8FAFC] container mx-auto'>
             <div className='container mx-auto'>
-                <div className='container mx-[200px]'>
+                <div className='container m-l-[200px]'>
                     <h1 className='font-bold text-[2rem]'>Friendship Analytics</h1>
                 </div>
 
