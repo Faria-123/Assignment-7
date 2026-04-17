@@ -1,7 +1,10 @@
 import React, { useContext } from 'react';
 import { keencontext } from './ContextProvider.jsx'
-import Card from './Card.jsx';
+// import Card from './Card.jsx';
 import { RxDividerVertical } from 'react-icons/rx';
+import { lazy, Suspense } from 'react';
+
+const Card = lazy(() => import('./Card.jsx'));
 const HomePage = () => {
     const keeninfo = useContext(keencontext);
     const { keen } = keeninfo;
@@ -10,6 +13,7 @@ const HomePage = () => {
 
 
         <div className='container mx-auto'>
+
             <div class="py-16 px-4">
                 <div class="container mx-auto">
 
@@ -57,10 +61,17 @@ const HomePage = () => {
             <div className='container mx-auto font-bold text-[1.2rem] justify-items-start'>
                 Your Friends
             </div>
+            {/* here */}
             <div className='container mx-auto grid md:grid-cols-3 lg:grid-cols-4 gap-5'>
-                {
+                {/* {
                     keen.map(k => <Card k={k} />)
-                }
+                } */}
+
+                <Suspense fallback={<p className="text-center">Loading cards...</p>}>
+                    {
+                        keen.map(k => <Card key={k.id} k={k} />)
+                    }
+                </Suspense>
             </div>
         </div>
     );

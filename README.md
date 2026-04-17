@@ -1,16 +1,29 @@
-# React + Vite
+Project Name:keenKeeper.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Create and Keep the Relationships That Matter to Us, One Connection at Time.
 
-Currently, two official plugins are available:
+KeenKeeper was created with the desire to help you nurture and maintain personal relationships by giving you a personal dashboard for keeping our connections alive. With today’s fast-paced lifestyle it can be difficult to remember to connect on a regular basis; however, KeenKeeper helps us keep track of our past interactions with your loved ones and reminds us when it’s time to reconnect so no friendships are left behind.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Key Technology Used To Build This Application
+1. React 19 – Uses the latest React features, including the use() hook to create a Promises that we can handle seamlessly.
 
-## React Compiler
+2. Tailwind – A utility-first modern responsive user interface.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+3. DaisyUI – Allows for clean, user-friendly, accessible components like buttons and select boxes.
 
-## Expanding the ESLint configuration
+4. Recharts – Provides visualizations of our Friendship Analytics and interaction history.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+5. React Icons – Provide an intuitive way to convey visually through the Dashboard and Timeline.
+
+6. React Hot Toast – An elegant and non-intrusive solution for both 'Success' and 'Warning' notifications.
+
+7. Context API – A centralized and global state management solution for the entire application.
+key Features:
+1) Smart Relationship Tracking 
+Now we don't have to ask ourself or anyone else when was the last time we spoke to a specific friend. Each friend profile contains a "Days Since Contact" counter with respect to our own individual "Relationship Goals." The software will automatically categorize friends into 3 categories - On Track, Almost Due, or Overdue - which will allow us to easily identify who we need to reach out to today, so we can maintain great relationships.
+
+2) Interactive Activity Timeline 
+A centralized repository of all of our social interactions. From a text message, video call, or a casual coffee catch up, the interactive timeline will allow users to filter by type so they can view past shared experiences.
+
+3) Insightful Analytics Dashboard 
+The Friendship Analytics chart provides a visual representation of how we interact socially. Whether you prefer to communicate via voice, text, or video, using this tool will enable all users, to compare how they engage socially with friends and evaluate where improvement can be made. 
